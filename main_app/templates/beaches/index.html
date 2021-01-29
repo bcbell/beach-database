@@ -1,0 +1,26 @@
+ {% extends 'base.html' %}
+ {%  load static  %}
+ 
+
+
+{% block content%}
+<h1> Beaches </h1>
+{%for beach in beaches %}
+     <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://i.imgur.com/HUqnj6t.png">
+          <span class="card-title">{{beach.name}}</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red" href='{%url 'detail' beach.id %}'><i class="material-icons">+</i></a>
+        </div>
+        <div class="card-content">
+          <p>Location: {{beach.location}}</p>
+          <p>Description: {{beach.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{%endfor%}
+
+{%endblock%}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{beach.name}}</h1>
+
+<div class="card">
+  <div class="card-content">
+    <p>Location: {{ beach.location }}</p>
+    <p>Description: {{ beach.description }}</p>
+  </div>
+</div>
+
+{% endblock %}

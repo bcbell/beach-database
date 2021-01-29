@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #3371e6da;
+    color: #f8efc7;
+  }
+  
+  main {
+    flex: 1 0 auto;
+    
+  }
+
+  nav {
+      background-color: coral;
+      
+  }
+
+  div.card-content {
+    background-color:#3371e6da ;
+  }
+
+  footer.page-footer {
+    padding-top: 0;
+    text-align: right;
+    background-color: #f8efc7;
+    color: #3371e6da;
+  }
